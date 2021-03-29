@@ -1,6 +1,10 @@
+:root {
+  --search-btn: #e056fd;
+  --white: #ffffff;
+}
+
 * { 
   box-sizing: border-box;
-  // margin: 0;
 }
 
 body { 
@@ -47,4 +51,34 @@ header::after {
 
 header * {
   z-index: 1;
+}
+
+header h1 { 
+  margin: 0 0 30px;
+}
+
+form { 
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+}
+
+form input { 
+  padding: 15px 30px;
+  width: 100%;
+  border-radius: 50px;
+  border: 0;
+  font-size: 16px;
+}
+
+form button { 
+  padding: 13px 30px;
+  border-radius: 50px;
+  border: 0;
+  background-color: var(--search-btn);
+  color: var(--white);
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 16px;
 }
